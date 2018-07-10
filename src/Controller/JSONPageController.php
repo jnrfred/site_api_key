@@ -31,12 +31,12 @@ class JSONPageController extends ControllerBase {
       $node = Node::load($nid);
       // Check to see if node is loaded and of type 'page'.
       if (isset($node) && $node->getType() == 'page') {
-        $node_tile = $node->getTitle();
+        $node_title = $node->getTitle();
         $node_body = $node->get('body')->value;
         $node_type = $node->bundle();
         // Build the json output.
         $output = [
-          'Title' => $node_tile,
+          'Title' => $node_title,
           'Body' => $node_body,
           'Type' => $node_type,
           'Nid' => $nid,
