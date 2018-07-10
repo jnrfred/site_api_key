@@ -47,7 +47,6 @@ class JSONPageController extends ControllerBase {
         $output = [
           'Access denied',
         ];
-        return new JsonResponse($output);
       }
     }
     else {
