@@ -1,0 +1,4 @@
+name: Site API Key
+description: Adds site API key to site information form
+type: module
+core: 8.x
